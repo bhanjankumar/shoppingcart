@@ -300,6 +300,9 @@ body {
   border-radius: 50%;
   background: white;
 }
+.btn-list {
+  margin-top: 45px;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .example input[type=text] {
     padding: 10px;
