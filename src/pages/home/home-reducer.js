@@ -173,7 +173,8 @@ const HomeReducer = (state={...initialState},action) => {
         case ActionType.NAV_APPLY_FILTER:
             return {
                 ...state,
-                data:getSearchPriceFilter(action.data,action.filterPrice)
+                order:'price_Filter'+action.filterPrice,
+                data:getSearchPriceFilter(state.productsData,action.filterPrice)
             }
         case ActionType.NAV_TO_ASCENDING:
             return{
