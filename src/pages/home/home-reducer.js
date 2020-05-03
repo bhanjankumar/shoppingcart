@@ -92,12 +92,20 @@ const initialState = {
     }
 ]
 }
-let cartData = []
+let cartData = [],firstCardData=[];
 const getCollectAddCart = (data) => {
+    let prodctIdCnt=[],countObj = {}, cartDataObj={};
     if(data){
-        cartData.push(data);
+        firstCardData.push(data);
     }
-    cartData = [...new Set(cartData)];
+    for(let prodId of firstCardData){
+        prodctIdCnt.push(prodId.id);
+    }
+    prodctIdCnt.forEach(function(i) { countObj[i] = (countObj[i]||0) + 1;});
+    cartData = [...new Set(firstCardData)];
+    for(let j=0;j<cartData.length;j++){
+        Object.assign(cartData[j],{quantity:countObj[cartData[j].id]});
+    }
     return cartData;
 }
 const getSearchFilter = (filerData,searchData) =>{
