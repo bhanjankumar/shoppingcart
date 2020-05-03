@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/verdana.ttf') format('ttf');
+    }
+body {
+    background-color: #F1F3F6;
+    font-family: 'Verdana';
+    font-size: 14px;
+  }
+  .products{
+    min-height: 265px;
+  }
+  .products img{width:100%;height: 165px;}
+  .products button{
+    border-radius: 15px;
+    background: #F8BF13;
+  }
+.filter .applyBtn button{
+    border-radius: 15px;
+    background-color:#2874F0;
+    padding: 5px 15px;
+    color: #fff;
+}
+.filter .applyBtn{
+    text-align: center;
+}
+.filter h2{    
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.navbar-dark{
+    background-color:#2874F0;
+}
+.sorting{
+    margin: 25px 10px;
+}
+.sorting a{padding:5px 10px;}
+.footer-copyright{
+    background: #2874F0;
+    color: #fff;
+}
+#searchIcon{
+    float:right;
+}
+.cartimg{margin:10px 0px;width: 35%;
+  float: left;}
+.cartimg img{width:100px;height:90px;float: left;}
+.cartimg .dataDesc{margin-left: 20px;float: left;}
+.cartimg .dataDesc span{display: block;margin-bottom: 10px;}
+.cartimg {
+  margin: 10px 0px;
+  width: 25%;
+  float: left;
+}
+.checout-right {
+  float: left;
+  width: 75%;
+  margin: 25px 0px;
+}
+.counter{
+  display: inline-block;
+  width: 33%;
+}
+.checkoutPage{margin:25px 0px}
+.checkoutPage input{width:40px;    border: 1px solid #ccc;
+  padding: 0px 14px;}
+.checkoutPage .roundbtn{
+  padding: 4px 11px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  background-color: #fff; margin: 0px 5px 0px 5px;}
+.check-brder{
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom:10px;
+}
+.right-pricedetail{
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+}
+.right-pricedetail h2{
+font-size: 18px;
+border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+.right-pricedetail .total{
+border-top: 1px solid #ccc;
+padding-top: 10px;
+font-weight: 600;
+}
+.right-pricedetail .priceDetInner{
+  padding: 10px 0px
+}
+.right-pricedetail .priceDetInner div{
+  padding: 10px 0px;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  ::placeholder {
+    color:#fff;
+  }
+  /* Style the search field */
+  // .example input[type=text] {
+  //   padding: 10px;
+  //   font-size: 17px;
+  //   border: 1px solid grey;
+  //   float: left;
+  //   width: 80%;
+  //   background: #f1f1f1;
+  // }
+  .example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 0;
+    float: left;
+    width: 80%;
+    background: #2874F0;
+    border-bottom: 2px solid #fff;
+}
+  
+  /* Style the submit button */
+  .example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2874F0;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  .example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  .example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .searchElement{
+    width: 100%;
+    text-align: right;
+  }
+  .seachFilter{display: inline-block;
+    margin-right: 15px;}
+    .cart{display: inline-block;position: relative;
+        margin-right: 65px;color: #fff;}
+
+.fa-shopping-cart{font-size: 30px;
+    position: absolute;
+    top: -34px;
+}
+.cart .cartCnt{
+    position: absolute;
+    top: -46px;
+    left: 25px;
+    padding: 2px 9px;
+    border-radius: 20px;
+    background: red;
+    color: #fff;
+}
+.discount{margin-left:10px;font-size:12px;font-weight:600;color:green;}
+.actual{font-size:14px;}
+.display{font-size:11px;}
+.input-range__slider{background-color: #2874F0 !important;border: 1px solid #2874F0 !important;}
+.input-range__track--active{background: #3f51b5 !important;}
+.mbl-filt{display:none;}
+.mbl-filter{display:flex; border-bottom:1px solid #666;}
+.mbl-filter .sort, .mbl-filter .filter{width: 50%;text-align: center;padding: 15px 0px;}
+.mbl-filter .sort{border-right:1px solid #666;}
+.sorting{display:block;}
+.logo{width: 30px;
+  float: left;
+  padding: 10px 0px;
+  margin-left: 10px;}
+.logo img{width:100%;}
+.remove span{font-weight: 600;}
+.mbl{
+  border-right: 1px solid #d1d1d1;
+}
+.mblshow{
+  display: none;
+}
+//radio button 
+
+.radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 0;
+    float: left;
+    width: 60%;
+    background: #2874F0;
+    border-bottom: 2px solid #fff;
+}
+::placeholder {
+  color:#fff;
+}
+.sorting a{
+  font-size: 12px;
+  padding: 5px 2px;
+}
+.bgmobile{width: 100%;
+  height: 185vh;
+  background-color: rgba(0, 0, 0, 0.5);position: absolute;z-index: 99;}
+.sorting,.mbl-sortFilter{display: none;}
+.mbl-filt, .mblshow{display:block;}
+.mbl{position: relative;}
+.mbl-sortFilter{
+  background: #fff;
+  padding: 5px;
+  position: fixed;
+  z-index: 100;
+  width: 91%;
+}
+.seachFilter{
+  width: 60%;
+}
+.discount{font-size:10px;}
+.counter{    margin: 7px 0px;display:block;width:100%;}
+.counter span{margin: 7px 0px;}
+.cartimg {
+  margin: 10px 0px;
+  width: 35%;
+  float: left;
+}
+.checout-right {
+  float: left;
+  width: 60%;
+  margin: 25px 0px;
+}
+.mbl{
+  border:0;
+}
+.btn-list{
+  display: flex;
+  margin-top: 45px;
+  border-top: 1px solid #d1d1d1;
+}
+.cancelBtn{
+  width: 50%;
+  border-right: 1px solid #d1d1d1;
+}
+.cancelBtn button, .filter .applyBtn button{ background-color: transparent;
+  padding: 5px 15px;
+  color: #2874F0;
+  border: 0;font-weight:600;}
+  
+.filter .applyBtn{
+  text-align: center;
+  width: 50%;
+}
+.filter-pop h3{
+  font-size:18px;
+}
+.filter-pop .radio{
+  font-size: 16px;
+}
+.mblshow{
+  display: block;
+}
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .example input[type=text] {
+    width: 80%;
+  }
+  
+}
