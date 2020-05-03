@@ -6,7 +6,7 @@ class SearchComponent extends PureComponent{
         super();
         this.enterSearch = this.enterSearch.bind(this);
         this.state={
-            searchData:null
+            searchData:''
         }
     }
 
@@ -14,6 +14,9 @@ class SearchComponent extends PureComponent{
         this.setState({
             searchData:e.target.value
         })
+    }
+    searchGetProduct(productData){
+        this.props.searchGetProduct(productData,this.state.searchData)
     }
     enterSearch(event){
         if(event.key === 'Enter' && this.state.searchData){
@@ -27,7 +30,7 @@ class SearchComponent extends PureComponent{
             <div className="seachFilter">
                 <div class="example" >
                 <input type="text" onChange = {(e)=>this.changeData(e)} onKeyPress={this.enterSearch} placeholder="Search.." name="search" />
-                <button onClick={()=>this.props.searchGetProduct(productData,this.state.searchData)} type="image"><i class="fa fa-search"></i></button>
+                <button onClick={()=>this.searchGetProduct(productData)} type="image"><i class="fa fa-search"></i></button>
                 </div>
             </div>
         )
